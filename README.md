@@ -61,9 +61,17 @@ MCU Version D013.020.
 Certain sections of the codeplug file format have not yet been mapped.  These
 include areas related to the 'Basic Information', 'Menu Item', 'Buttons
 Definitions', 'Privacy Setting', 'Digit Emergency System', and 'DTMF Signalling'
-settings.  If you start with the default codeplug, these sections of the file
-will remain unmodified, and will be included in the new codeplug file that you
-generate.
+settings.  Whatever these sections contain in the codeplug file that you loaded
+(or in the default codeplug, if you didn't pass in a Buffer) will remain
+unchanged in the codeplug Buffer that you generate with Codeplug.serialize().
 
-I have no idea what the ramifications might be of writing one of these codeplug
-files to a different model of radio (a VHF MD-380, for example).
+I have no idea what the ramifications might be of reading in a codeplug file
+from one type of radio (a UHF MD-380, for example), modifying it, writing it,
+then uploading it to a different model of radio (a VHF MD-380, for example), or
+what differences there may be between codeplugs with different "MCU Version"
+settings in the 'Basic Information' area.
+
+## Acknowledgements
+
+This document by [IZ2UUF](http://www.iz2uuf.net/wp/index.php/2016/06/04/tytera-dm380-codeplug-binary-format/),
+mapping much of the codeplug file format.
