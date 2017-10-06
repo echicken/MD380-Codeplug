@@ -73,5 +73,5 @@ settings in the 'Basic Information' area.
 
 ## Acknowledgements
 
-This document by [IZ2UUF](http://www.iz2uuf.net/wp/index.php/2016/06/04/tytera-dm380-codeplug-binary-format/),
+IZ2UUF for [this document](http://www.iz2uuf.net/wp/index.php/2016/06/04/tytera-dm380-codeplug-binary-format/),
 mapping much of the codeplug file format.
