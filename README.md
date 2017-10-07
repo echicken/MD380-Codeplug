@@ -43,6 +43,7 @@ See _lib/map.js_ for names and types of sub-properties which can be read and
 written.
 
 - settings
+- menu_items
 - text_messages
 - contacts
 - receive_groups
