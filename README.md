@@ -60,11 +60,11 @@ the CPS MD380 Programming Software V1.34 for Windows, for a 400-480MHz MD-380,
 MCU Version D013.020.
 
 Certain sections of the codeplug file format have not yet been mapped.  These
-include areas related to the 'Basic Information', 'Menu Item', 'Buttons
-Definitions', 'Privacy Setting', 'Digit Emergency System', and 'DTMF Signalling'
-settings.  Whatever these sections contain in the codeplug file that you loaded
-(or in the default codeplug, if you didn't pass in a Buffer) will remain
-unchanged in the codeplug Buffer that you generate with Codeplug.serialize().
+include areas related to the 'Basic Information', 'Buttons Definitions',
+'Privacy Setting', 'Digit Emergency System', and 'DTMF Signalling' settings.
+Whatever these sections contain in the codeplug file that you loaded (or in the
+default codeplug, if you didn't pass in a Buffer) will remain unchanged in the
+codeplug Buffer that you generate with Codeplug.serialize().
 
 I have no idea what the ramifications might be of reading in a codeplug file
 from one type of radio (a UHF MD-380, for example), modifying it, writing it,
