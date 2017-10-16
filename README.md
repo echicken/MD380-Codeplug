@@ -45,6 +45,7 @@ written.
 - settings
 - menu_items
 - button_definitions
+- one_touch_access
 - text_messages
 - contacts
 - receive_groups
