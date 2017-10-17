@@ -46,6 +46,7 @@ written.
 - menu_items
 - button_definitions
 - one_touch_access
+- quick_contact
 - text_messages
 - contacts
 - receive_groups
