@@ -53,17 +53,33 @@ fs.writeFileSync('/path/to/my/othercodeplug.rdt', newplug.serialize());
 See _lib/map.js_ for names and types of sub-properties which can be read and
 written.
 
-- settings
-- menu_items
-- button_definitions
-- one_touch_access
-- quick_contact
-- text_messages
-- contacts
-- receive_groups
-- zones
-- scan_lists
-- channels
+- settings (Object)
+- menu_items (Object)
+- button_definitions (Object)
+- one_touch_access (Array[Object...])
+- quick_contact (Array[Object...])
+- text_messages (Array[Object...])
+- contacts (Array[Object...])
+- receive_groups (Array[Object...])
+- zones (Array[Object...])
+- scan_lists (Array[Object...])
+- channels (Array[Object...])
+
+Where one of the root properties is an Array, it contains multiple records of a
+given type.  Many records have properties that reference records from other
+sections by their index numbers.  Note that in a codeplug file, all references
+to records in other sections are 1-based, however in these Arrays, all indexes
+are 0-based.  I could account for this automagically, but I don't wanna.
+
+```js
+if (codeplug.quick_contact[0].contact > 0) { // Points to a valid contact
+	console.log(
+		'Number Key Quick Contact for Key 0 is',
+		codeplug.contacts[codeplug.quick_contact[0].contact - 1].call_id,
+		codeplug.contacts[codeplug.quick_contact[0].contact - 1].name
+	);
+}
+```
 
 ## Notes
 
