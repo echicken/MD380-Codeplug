@@ -34,12 +34,6 @@ fs.writeFileSync('/path/to/my/othercodeplug.rdt', newplug.serialize());
 
 ### Methods
 
-- resequence()
-  - Sorts data within the Codeplug object so that all populated records appear sequentially within their sections
-  - Updates references between various sections so that they point to the correct indexes after sortation
-  - Is very slow and inefficient; sorry; I'll fix that someday
-  - This is automatically called within 'serialize()'
-  - May be worth calling before using 'JSONify()', but probably not
 - serialize()
   - Returns a Buffer which can then be written to a file
 - JSONify(full)
